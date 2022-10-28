@@ -1,3 +1,4 @@
+nums = [1, 2, 3, 4]
 def sum_range(nums, start=0, end=None):
     """Return sum of numbers from start...end.
 
@@ -12,7 +13,7 @@ def sum_range(nums, start=0, end=None):
         >>> sum_range(nums, 1)
         9
 
-        >>> sum_range(nums, end=2)
+        >>> 
         6
 
         >>> sum_range(nums, 1, 3)
@@ -23,3 +24,12 @@ def sum_range(nums, start=0, end=None):
         >>> sum_range(nums, 1, 99)
         9
     """
+    count = 0
+    xnums = nums[start:end]
+    for num in xnums:
+        print (num)
+        count = count + num
+        print (count)
+    print (count)
+    return count
+sum_range(nums, 1, 3)
